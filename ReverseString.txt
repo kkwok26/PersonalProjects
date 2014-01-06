@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.lang.String;
+
+public class ReverseString
+{
+	public static void main( String[] args )
+	{
+		Scanner keyboard = new Scanner(System.in);
+		String input;
+		int length;
+		String[] charArray = new String[10];
+		
+		System.out.print( "Enter text: " );
+		input = keyboard.next();
+		length = input.length();
+		
+		for ( int i = 0; i < length; i++ )
+		{
+			charArray[i] = input.substring(i,i+1);
+		}
+		
+		while (length > 0) {
+			System.out.print( charArray[length-1] );
+			length--;
+		}
+		
+		System.out.println();
+	}
+}
