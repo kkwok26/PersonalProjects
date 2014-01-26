@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.lang.String;
+
+public class ReverseString
+{
+	public static void main( String[] args )
+	{
+		Scanner keyboard = new Scanner(System.in);
+		String input;
+		int length;
+		String[] charArray = new String[10];
+		
+		System.out.print( "Enter text: " );
+		input = keyboard.next();
+		result = "";
+		
+		for ( int i = input.length() - 1; i >= 0; i-- ) {
+			String letter = phrase.substring(i, i + 1);
+			result += letter;
+		}
+		
+		System.out.println(result);
+	}
+}
